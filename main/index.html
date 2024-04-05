@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="behaviour.js" defer></script>
+    <script src="https://kit.fontawesome.com/9c29395759.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="smartwatch">
+        <img src="images/watch.png" alt="smartwatch">
+        <div class="screen">
+            <button id="homeBtn" disabled></button>
+
+            <div id="clock">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+            </div>
+            <i id="next" class="fa-solid fa-arrow-right"></i>
+            <div id="menu">
+                <ul> Menu
+                    <hr>
+                    <li id="registos-op">Consultar Registos</li>
+                    <li id="monitorizar-op">Monitorizar Paciente</li>
+                    <li id="listaPacientes-op">Lista de Pacientes</li>
+                    
+                </ul>
+            </div>
+            <div id="lista-pacientes">
+                Lista de Pacientes <hr>
+                <ul id="listaUtentes"></ul>
+            </div>
+            
+            <div id="registo-paciente"></div>
+            
+            <div id="monitorizar"></div>
+
+            <div id="alarmes"></div>
+
+            <div id="listaPacientes">
+                <div id="btnAddDell">
+                    <button id="btnRemover" disabled>Remover</button>
+                    <button id="btnAdicionar">Adicionar</button>
+                </div>  
+                <div id="ecraAdd">
+                    <h4>Fale perto do microfone</h4>
+                    <img src="images/microfone_.png" alt="microfone">
+                </div>
+            </div>
+                
+            <div>
+                <button id="back-btn">Voltar</button>   
+            </div>
+        </div>
+        
+        <div class="alarms-notif">
+            <button id="alarms-button">
+                <span id="numAlarmsButton"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <a href="readme.txt" target="_blank">(i) Funcionalidades da App</a>
+    </div>
+
+    <div class="controllers">
+        <div id="control-alarms">
+            <span id="numAlarmsController"></span> <br>
+            <button id="incAlarms">+</button>
+            <button id="decAlarms">-</button>
+        </div>
+        <br>
+        <div id="control-vitals">
+            <span>Sinais Vitais</span> <br>
+            <button id="updateVitals">Atualizar</button>
+        </div>
+        <div id="addPacienteDiv">
+            <h3>Adicionar Paciente:</h3>
+            <form id="addPaciente-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                
+                <label for="contacto">Contacto:</label>
+                <input type="text" id="contacto" name="contacto"><br><br>
+                
+                <label for="numeroUtente">Número Utente:</label>
+                <input type="text" id="numeroUtente" name="numeroUtente"><br><br>
+                
+                <label for="sexo">Sexo:</label>
+                <input type="text" id="sexo" name="sexo"><br><br>
+    
+                <label for="idade">Idade:</label>
+                <input type="text" id="idade" name="idade"><br><br>
+    
+                <label for="fichaTecnica">Ficha Técnica:</label>
+                <input type="text" id="fichaTecnica" name="fichaTecnica"><br><br>
+
+                <label for="bloco">Bloco:</label>
+                <input type="text" id="bloco" name="bloco"><br><br>
+                
+                <button id="btnCancelar">Cancelar</button>
+                <input id ="submitButton" type="submit" value="Enviar">
+              </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
