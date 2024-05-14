@@ -2,7 +2,7 @@
 - This project was developed within the scope of the Computer Interfaces discipline, highlighting the importance of intuitive and efficient interfaces. Our approach has essentially focused on understanding the needs of end users, applying user-centered design principles to develop interfaces that meet their expectations and improve their experience.
 - During the development process, we also participated in collaborative activities with other working groups, in order to (heuristically) evaluate them cross-functionally, also receiving various feedbacks.
 - We also carried out a final presentation of the developed project (`Functional_Prototype_Presentation (en).pdf`), showing, in an iterative and descriptive way, the entire process until the production of the final prototype.
-
+- **Languages/Technologies used:** HTML5, CSS3, Javascript and Figma
 ---
 
 ### Additional Note
